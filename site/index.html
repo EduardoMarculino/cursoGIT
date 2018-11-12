@@ -25,24 +25,29 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/signin.css" rel="stylesheet">
-    <script src="./js/login.js"></script>
   </head>
 
   <body class="text-center img">
-    <div style="background-color: white" class="form-signin formcentral">
-      <img class="mb-4" src="./img/bootstrap-solid.png" alt="" width="95" height="70">
-      <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
-      <label for="inputEmail" class="sr-only">Endereço de e-mail</label>
-      <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Endereço de email" required autofocus>
-      <label for="inputPassword" class="sr-only">Senha</label>
-      <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Senha" required>
-      <div class="checkbox mb-3">
-        <label> <input type="checkbox" value="remember-me"> Lembrar de mim</label>
+    <form style="background-color: white" class="form-signin formcentral">
+            <img class="mb-4" src="./img/bootstrap-solid.png" alt="" width="95" height="70">
+            <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
+              <label for="inputEmail" class="sr-only">Endereço de e-mail</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de email" required autofocus>
+              <label for="inputPassword" class="sr-only">Senha</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+            <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Lembrar de mim
+        </label>
+		
       </div>
-      <button onclick="logar()" class="btn btn-lg btn-primary btn-block">Login </button>
-	    </br>
-	    <a href="cadastro.html">Ainda não sou cadastrado...<a/>
-	    <p class="mt-5 mb-3 text-muted">&copy; 2018-2018</p>
-    </div>
+      <button  class="btn btn-lg btn-primary btn-block" type="submit"><a href="contas.html"  style="color: white; text-decoration: none;">Login</a></button>
+	  </br>
+	  <a href="cadastro.html">Ainda não sou cadastrado...<a/>
+	  
+      <p class="mt-5 mb-3 text-muted">&copy; 2018-2018</p>
+	  
+    </form>
+	
   </body>
 </html>
