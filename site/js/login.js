@@ -1,10 +1,13 @@
+document.getElementById("buttonLogar").addEventListener("click", logar);
+
 function logar() {
-    email = document.getElementById("inputEmail").value;
-    senha = document.getElementById("inputPassword").value;
-    console.log(email, senha);
-    if (email == "matheus@email.com" & senha =="senha" | email == "ariel@email.com" & senha == "123" | email == "eduardo@email.com" & senha == "456") {
-            window.location.assign("./contas.html");
-    } else {
-        alert("Usuário ou Senha Inválido");
+    event.preventDefault(event);
+    var email = document.getElementById("inputEmail");
+    var senha = document.getElementById("inputPassword");
+    var check = JSON.parse(localStorage.getItem(senha.value));
+
+    if (email.value == check.email & senha.value == check.senha) {
+        console.log("hi, "+check.email);
+        window.location.assign("./contas.html");
     }
 }

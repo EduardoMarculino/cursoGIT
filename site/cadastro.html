@@ -68,7 +68,7 @@
 
             <div class="mb-3">
               <label for="address">Senha</label>
-              <input type="password" class="form-control" id="address" placeholder="Senha" required>
+              <input type="password" class="form-control" id="password" placeholder="Senha" required>
               <div class="invalid-feedback">
                 Por Favor, insira uma senha válido.
               </div>
@@ -76,9 +76,9 @@
 
             <div class="mb-3">
               <label for="address2">Telefone <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="(99) 9 9999-9999">
+              <input type="text" class="form-control" id="phone" placeholder="(99) 9 9999-9999">
             </div>
-            <button onclick="myFunction()" class="btn btn-primary btn-lg btn-block" type="submit" >Cadastrar</button>
+            <button id="buttonCadastrar" class="btn btn-primary btn-lg btn-block" type="submit" >Cadastrar</button>
           </form>
 		  </br>
 		  <a href="index.html" ><p align="center">Já sou cadastrado...</p><a/>
@@ -98,21 +98,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script>
-function myFunction() {
-    alert("Se os dados foram inseridos corretamente, clique no botão abaixo para ignorar esta página, e faça login :D")
-    alert("Cadastrado com sucesso!");
-  }
-
-</script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
+    <script src="js/cadastro.js">
+    /*  // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function() {
         'use strict';
 
@@ -131,7 +123,7 @@ function myFunction() {
             }, false);
           });
         }, false);
-      })();
+      })();*/
     </script>
   </body>
 </html>
