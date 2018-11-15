@@ -14,10 +14,8 @@ function logar() {
     var check = JSON.parse(localStorage.getItem(senha.value));
     if (check) {
         if (email.value == check.email & senha.value == check.senha) {
-            console.log("hi, "+check.email);
             window.location.assign("./contas.html");
         } else {
-            console.log("OI");
             alert('Usuário ou Senha Inváildos.');
         }
     } else {

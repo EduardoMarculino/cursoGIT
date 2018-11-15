@@ -10,8 +10,8 @@ function cadastrar(event) {
     var phone = document.getElementById("phone");
     //console.log(email.value, password.value, firstName.value, lastName.value, username.value, phone.value);
 
-    if (email.value == "" | password.value == "") {
-        alert("Insira um email ou uma senha válida.");
+    if (email.value == "" | password.value == "" | firstName.value == "" | lastName.value == "" | username.value == "") {
+        alert("Preencha os campos obrigatórios.");
         return;
     }
 
@@ -34,4 +34,7 @@ function cadastrar(event) {
     email.value = '';
     password.value = '';
     phone.value = '';
+
+    alert("Cadastro feito com sucesso.");
+    window.location.assign("./index.html");
 }
