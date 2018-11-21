@@ -6,9 +6,9 @@ $(
                 input += '<div class="card" style="width: 18rem;">';
                 input += '<img class="card-img-top" src="./img/card1.jpg" alt="Card image cap">';
                 input += '<div class="card-body">';
-                input += '<h5 class="card-title">Cartão de Crédito</h5>';
+                input += '<h5 class="card-title">Adiocione um Título</h5>';
                 input += '<input type="checkbox">';
-                input += '<span>Pagar Contas referente aos seus cartões de créditos</span>';
+                input += '<span> Adicione um lembrete a essa conta</span>';
                 input += '<br><br><a href="cartao.html" class="btn btn-primary">Verificar</a>';
                 input += '<a style="float:right;" class="btn btn-danger deletar" href="#" role="button">Deletar</a>';
                 input += '</div></div></div>';
