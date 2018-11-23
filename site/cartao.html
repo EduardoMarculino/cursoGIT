@@ -59,12 +59,12 @@
 
     <!-- Begin page content -->
 
-    <h1 class="h1  " style="">Tabela Conta de água</h1>
+    <h1 class="h1  " style="">Tabela Conta do cartão de crédito</h1>
     
 
-    <form class="imp font-weight-light border border-secondary custom-class @media" name="formulario" method="post" onsubmit="return processar('myTable')">
+    <form class="imp font-weight-light border border-secondary custom-class row" name="formulario" method="post" onsubmit="return processar('myTable')">
     
-    Mês:<select class="ct font-weight-light" type="text" name="conta">
+    Mês:<select class="ct font-weight-light row" type="text" name="conta">
         <option selected>Selecione o mês da conta</option>
         <option value="Janeiro">Janeiro</option>
         <option value="Fevereiro">Fevereiro</option>
@@ -79,7 +79,7 @@
         <option value="Novembro">Novembro</option>
         <option value="Dezembro">Dezembro</option>
       </select>
-    Status:<select class="ct font-weight-light" type="text" name="valor">
+   <label> Status:</label><select class="ct font-weight-light" type="text" name="valor">
         <option selected>Status da conta</option>
         <option value="Pago">Pago</option>
         <option value="À pagar">À pagar</option>

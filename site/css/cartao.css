@@ -1,7 +1,9 @@
+
 .th{
   text-align: center;
   font-family: sans-serif;
   font-size: 15px;
+  
   }
   .tab{
   padding-top: 5px;
@@ -9,25 +11,26 @@
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 0px;
-  margin-top: 5px;
+  margin-left: 8px;
+  margin-top: -8px;
   border: 1px;
   border-style: solid;
   width: 100%;
   height: 50px;
-  
   }
  .imp{
   border-radius: 5px;
-  margin-left: 0px;
-  margin-top: 20px; 
+  margin-left: 8px;
+  margin-top: 10px; 
   border: 1px;
   border-style: solid;
   width: 100%;
-  height: 50px;
-  padding-top: 4px;
+  height: 100%;
+  padding-top: 10px;
   padding-left: 10px;
+  padding-bottom: 15px;
+  font-family: ;
   font-size: 17px;
-  margin-bottom: 10px;
  }
  .ct{
   margin-top: 5px;
@@ -44,11 +47,34 @@
   margin-right: 10px;
   float: right;
  }
-
+ .button{
+  height: 37px;
+  width: 100px;
+  float: right;
+  margin-top: 25px;
+  margin-left: 115px;
+  margin-right: -115px;
+ }
  .form1{
-   margin-bottom: 0px;
+  border-style: solid;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 30px;
+  margin-left: 0px;
+  margin-top: 65px;
+  
  }
- .tb1{
-   margin-top: 15px;
+ .dform{
+  margin-left: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
- 
+ .dform1{
+  margin-left: 20px;
+}
+
+h1{
+  margin-top: 60px;
+  text-align:center;
+  margin-bottom: -15px;
+}
