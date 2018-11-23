@@ -2,7 +2,7 @@ $(
     function() {
         $("#add").click(function() {
             event.preventDefault(event);
-            var input =  '<div class="col-md-6 col-sm-12 col-lg-6 col-xl-3 contas"><br>\
+            var input =  '<div class="col-md-6 col-sm-12 col-lg-6 col-xl-3 contas animated fadeInLeft" id="valeuFalou"><br>\
                             <div class="card" style="width: 18rem;">\
                                 <img class="card-img-top" src="./img/img.png" alt="Card image cap">\
                                 <hr>\
@@ -20,6 +20,7 @@ $(
 
         $(document).on('click', '.deletar',function() {
             event.preventDefault(event);
+            $(this).parent().parent().parent().addClass('animated zoomOut');
             $(this).parent().parent().parent().remove();
         });
     }
