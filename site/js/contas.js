@@ -20,8 +20,11 @@ $(
 
         $(document).on('click', '.deletar',function() {
             event.preventDefault(event);
+            var _this_ = $(this);
             $(this).parent().parent().parent().addClass('animated zoomOut');
-            $(this).parent().parent().parent().remove();
+            setTimeout(function(){
+                _this_.parent().parent().parent().remove();
+            },500);
         });
     }
 );
