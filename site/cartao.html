@@ -6,15 +6,35 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="./img/favicon.ico">
+
     <title >Tabela de contas - Cartão</title>
+
     <!-- Bootstrap core CSS -->
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="./css/cartao.css" rel="stylesheet">
+
+
+   <link href="./css/cartao.css" rel="stylesheet">
+
+
+
+
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
   </head>
+
+<style type="text/css">
+  .bd{
+  background-image: url("./img/fundo.jpg");
+}
+  .hd{
+    background-color: white;
+  }
+</style>
   <body onload="start()">
+
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -41,36 +61,43 @@
         </div>
       </nav>
     </header>
+
     <!-- Begin page content -->
-    <h1 class="h1">Tabela Conta do cartão de crédito</h1>
-    <form class="imp font-weight-light border border-secondary custom-class row" name="formulario" method="post" onsubmit="return processar('myTable')">
-      Mês:<select class="ct font-weight-light row" type="text" name="conta">
-          <option selected>Selecione o mês da conta</option>
-          <option value="Janeiro">Janeiro</option>
-          <option value="Fevereiro">Fevereiro</option>
-          <option value="Março">Março</option>
-          <option value="Abril">Abril</option>
-          <option value="Maio">Maio</option>
-          <option value="Junho">Junho</option>
-          <option value="Julho">Julho</option>
-          <option value="Agosto">Agosto</option>
-          <option value="Setembro">Setembro</option>
-          <option value="Outubro">Outubro</option>
-          <option value="Novembro">Novembro</option>
-          <option value="Dezembro">Dezembro</option>
-        </select>
-          <label> Status:</label><select class="ct font-weight-light" type="text" name="valor">
-          <option selected>Status da conta</option>
-          <option value="Pago">Pago</option>
-          <option value="À pagar">À pagar</option>
-          <option value="Atrasado">Atrasado</option>
-        </select>
-      Data do pagamento: <input  class="ct font-weight-light" type="date" name="data">
-      Valor: <input class="ct font-weight-light" type="text" name="status">
-      <input  class="btn btn btn-dark my-2 my-sm-0 bti" type="submit" value="Confirmar">
+
+    <h1 class="h1  " style="">Tabela Conta do cartão de crédito</h1>
+    
+
+    <form class="imp table-dark font-weight-light border border-secondary custom-class row" name="formulario" method="post" onsubmit="return processar('myTable')">
+    
+    Mês:<select class="ct font-weight-light row" type="text" name="conta">
+        <option selected>Selecione o mês da conta</option>
+        <option value="Janeiro">Janeiro</option>
+        <option value="Fevereiro">Fevereiro</option>
+        <option value="Março">Março</option>
+        <option value="Abril">Abril</option>
+        <option value="Maio">Maio</option>
+        <option value="Junho">Junho</option>
+        <option value="Julho">Julho</option>
+        <option value="Agosto">Agosto</option>
+        <option value="Setembro">Setembro</option>
+        <option value="Outubro">Outubro</option>
+        <option value="Novembro">Novembro</option>
+        <option value="Dezembro">Dezembro</option>
+      </select>
+   <label> Status:</label><select class="ct font-weight-light" type="text" name="valor">
+        <option selected>Status da conta</option>
+        <option value="Pago">Pago</option>
+        <option value="À pagar">À pagar</option>
+        <option value="Atrasado">Atrasado</option>
+      </select>
+    Data do pagamento: <input  class="ct font-weight-light" type="date" name="data">
+    Valor: <input class="ct font-weight-light" type="text" name="status">
+    <input  class="btn btn btn-dark my-2 my-sm-0 bti" type="submit" value="Confirmar">
+    
     </form>
-    <div class="">
-      <table class="tab table table-hover table-dark" >
+ 
+<div class="">
+    <table class="tab table table-hover table-dark" >
         <thead>
           <th class="th" scope="col">Mês</th>
           <th class="th" scope="col">Status da conta</th>
@@ -79,74 +106,23 @@
           <th class="th" scope="col">Apagar</th>
         </thead>
         <tbody style="text-align: center;" id="myTable"></tbody>
-      </table>
-    </div>
+    </table>
+</div>
+<!-- <a href="#" class="excluir">EXCLUIR</a> -->
+
+
+    
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-<script>
-    var d = document;
-function processar(idTabela)
-{
-    var id = Date.now();
-
-    var lista = ['conta', 'valor', 'data', 'status'];
-    var newRow = d.createElement('tr');
-    lista.map(item => {
-      var newCell = d.createElement('td');
-      newCell.innerHTML = d.getElementsByName(item)[0].value; 
-      newRow.appendChild(newCell); 
-    })
-    newRow.setAttribute('id', id);
-    var delButton = document.createElement('a');
-    var icon = document.createElement('span');
-    icon.setAttribute('class', 'fas fa-trash text-danger');
-    delButton.appendChild(icon)
-    delButton.setAttribute('href', '#');
-    delButton.onclick = () => deleteTodo(id, idTabela);
-
-    var acoes = d.createElement("td");
-    acoes.setAttribute('class', 'text-center')
-    acoes.appendChild(delButton)
-    newRow.appendChild(acoes);
-
-    
-    
-    //newRow.insertCell(0).innerHTML = d.getElementsByName('conta')[0].value;
-    //newRow.insertCell(1).innerHTML = d.getElementsByName('valor')[0].value;
-    //newRow.insertCell(1).innerHTML = d.getElementsByName('data')[0].value;
-    //newRow.insertCell(1).innerHTML = d.getElementsByName('status')[0].value;
-    d.getElementById(idTabela).appendChild(newRow);
-    return false;
-  }
-  deleteTodo = (id, idTabela) => {
-    var ul = document.getElementById(idTabela);
-    var item = document.getElementById(id);
-    ul.removeChild(item);
-  }
-
-</script>
-<script>
-$(".excluir").click(function() {
-  $(this).parents('tr').remove();
-});
-</script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="../site/js/geral.js"></script>
   </body>
 </html>
