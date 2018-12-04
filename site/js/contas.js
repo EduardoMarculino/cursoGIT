@@ -14,7 +14,7 @@ $("#add").click(function(event) {
                             <input type="text" style="border:0;font-size:20px;font-weight: 500; text-decoration:none;" value="Adicione um Título" id="valorInputTitulo"></input><br>\
                             <input type="checkbox">\
                             <input  type="text" style="border:0;" value="Adicione um lembrete" id="valorInputLembrete"></input><br>\
-                            <br><br><a href="cartao.html" class="btn btn-primary">Verificar</a>\
+                            <br><br><a href="extra.html" class="btn btn-primary">Verificar</a>\
                             <a style="float:right;" class="btn btn-danger deletar" href="#" role="button">Deletar</a>\
                     </div></div></div>';
 
