@@ -3,11 +3,11 @@ document.getElementById("inputPassword").addEventListener("keydown", getEnter);
 
 function getEnter(event) {
     if(event.keyCode == 13) {
-        logar();
+        logar(event);
     }
 }
 
-function logar() {
+function logar(event) {
     event.preventDefault(event);
     var email = document.getElementById("inputEmail");
     var senha = document.getElementById("inputPassword");

@@ -1,6 +1,10 @@
+$("#buttonSair").click(function(event){
+    event.preventDefault(event);
+    window.location.assign("./index.html");
+});
 
 $("#add").click(function(event) {
-    event.preventDefault();
+    event.preventDefault(event);
     
     var input =  '<div class="col-md-6 col-sm-12 col-lg-6 col-xl-3 contas animated fadeInLeft" id="valeuFalou"><br>\
                     <div class="card" style="width: 18rem;">\
@@ -18,7 +22,7 @@ $("#add").click(function(event) {
     return false;
 });
 
-$(document).on('click', '.deletar',function() {
+$(document).on('click', '.deletar',function(event) {
     event.preventDefault(event);
     var _this_ = $(this);
     $(this).parent().parent().parent().addClass('animated zoomOut');
